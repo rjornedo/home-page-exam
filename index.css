@@ -1,0 +1,180 @@
+body {
+  font-family: 'Oswald', sans-serif;
+  background-color: #333333; /* Light black */
+  olor: white; /* Make text readable */
+}
+
+/* Background only for Navbar & Hero */
+.hero-bg {
+  background: url('./images/bg.jpg') no-repeat center center/cover;
+  min-height: 100vh; /* Ensures it doesn’t hide content */
+  padding-top: 80px; /* Adjusts space for navbar */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  background-color: transparent; /* Initially transparent */
+}
+
+/* Increase Navbar Text Size */
+.navbar-nav .nav-link {
+  font-size: 20px !important; /* Enlarged text */
+  font-weight: bold; /* Makes text bolder */
+  padding: 15px 20px; /* Increase spacing for better appearance */
+}
+
+/* When scrolled, background changes */
+.navbar.scrolled {
+  background-color: #f8f9fa !important; /* Light gray background */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Change text color when scrolled */
+.navbar.scrolled .nav-link {
+  color: black !important; /* Dark text for contrast */
+}
+
+.navbar.scrolled .nav-link:hover {
+  color: #0d6efd !important; /* Bootstrap primary blue */
+}
+
+
+
+
+
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: calc(100vh - 70px); /* Adjust if needed */
+  color: white;
+}
+
+.hero h1, .hero p {
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8); /* Dark shadow for better contrast */
+}
+
+/* Enlarge Hero Subtitle */
+.hero p.lead {
+  font-size: 1.5rem; /* Increase size */
+  font-weight: bold; /* Make it stand out */
+}
+
+
+
+/* Rounded Logo */
+.rounded-logo {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid white;
+}
+
+/* Icon Block Styling */
+.icon-block {
+  padding: 20px;
+  border-radius: 10px;
+  background: rgba(0, 123, 255, 0.1); /* Light blue background */
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 2px solid #007bff; /* Blue border */
+}
+
+.icon-block:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  background: rgba(0, 123, 255, 0.2); /* Slightly darker blue on hover */
+}
+
+/* Icon Block Styling */
+.icon-block {
+  padding: 20px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.1); /* Light white background for visibility */
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 2px solid #f8f9fa; /* Light border for contrast */
+}
+
+.icon-block:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.2); /* Slightly lighter on hover */
+}
+
+/* Icon */
+.icon {
+  font-size: 50px;
+  color: #ffc107; /* Bright Yellow for high contrast */
+  margin-bottom: 15px;
+}
+
+/* Icon Block Text */
+.icon-block h4 {
+  color: #ffffff; /* White text for high contrast */
+  font-weight: bold;
+}
+
+.icon-block p {
+  color: #d1d1d1; /* Light gray for readability */
+}
+
+
+/*Carousel*/
+
+.carousel img {
+  width: 100%;
+  height: 80vh; /* Adjust height based on viewport */
+  object-fit: contain; /* Ensures the entire image is visible */
+}
+
+.carousel-caption {
+  color: black !important; /* Forces text to be black */
+  text-shadow: none !important; /* Removes any unwanted text shadow */
+}
+
+/*Cards*/
+.col-md-4:nth-child(1) .subject-card { background-color: #FFADAD; } /* Math - Light Red */
+.col-md-4:nth-child(2) .subject-card { background-color: #FFD6A5; } /* Science - Orange */
+.col-md-4:nth-child(3) .subject-card { background-color: #FDFFB6; } /* English - Yellow */
+.col-md-4:nth-child(4) .subject-card { background-color: #CAFFBF; } /* History - Green */
+.col-md-4:nth-child(5) .subject-card { background-color: #9BF6FF; } /* P.E. - Blue */
+
+.subject-card {
+    color: #000;
+    text-align: center;
+    border-radius: 10px;
+    padding: 20px;
+    transition: transform 0.3s;
+}
+
+.subject-card:hover {
+    transform: scale(1.05);
+}
+
+
+/* About Us */
+
+.gallery-img {
+    height: 200px; /* Fixed height for uniformity */
+    object-fit: cover; /* Ensures images maintain aspect ratio */
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery-img:hover {
+    transform: scale(1.1); /* Zoom effect on hover */
+}
